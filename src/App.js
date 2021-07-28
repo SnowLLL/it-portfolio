@@ -1,11 +1,13 @@
 import './App.css';
-import { Loading } from './components'
+import {Loading, Menu, HomePage } from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
+        <Menu />
         <Loading />
+        <HomePage />
       </header>
     </div>
   );

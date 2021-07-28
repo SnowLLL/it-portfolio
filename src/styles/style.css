@@ -1,8 +1,37 @@
+.jumpCircle {
+  text-align: center;
+  position: relative;
+  bottom: 8em;
+}
+
 .circle {
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
   background: linear-gradient(#d53369, #cbad6d);
   border-radius: 50%;
   display: inline-block;
   margin: 30px;
+}
+
+.jumpName {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  bottom: 4em;
+}
+
+.letter {
+  display: inline-block;
+  margin: 0.3em;
+  font-size: 1.5em;
+  background: linear-gradient(#22c1c3, #fdbb2d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.photo {
+  display: block;
+  width: 20%;
 }

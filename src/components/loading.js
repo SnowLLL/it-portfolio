@@ -8,19 +8,24 @@ const Loading = ()=>{
     useEffect(()=>{
         animationRef.current = anime({
             targets: '.jumpCircle .circle',
-            translateY: 500,
-            delay: anime.stagger(100, {start: 500})
+            translateY: -200,
+            delay: anime.stagger(200, {start: 0})
           });
     },[])
 
     return(
-        <div className='jumpCircle'>
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
-            <div className='circle'></div>
-        </div>
+        <>
+            <div className='jumpCircle'>
+                <div className='circle'></div>
+                <div className='circle'></div>
+                <div className='circle'></div>
+            </div>
+            <div className='jumpCircle'>  
+                <div className='circle'></div>
+                <div className='circle'></div>
+                <div className='circle'></div>
+            </div>
+        </>
     );
 }
 
