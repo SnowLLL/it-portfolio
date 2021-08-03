@@ -1,7 +1,5 @@
-import React,{ useEffect, useRef } from 'react';
-import { motion, useViewportScroll, useAnimation, useTransform } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import anime from 'animejs/lib/anime.es.js';
+import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import Loading from './loading'
 
 const Portfolio = ()=>{
@@ -24,7 +22,7 @@ const Portfolio = ()=>{
             style={{scale:scaleToNull}}>
                 <Loading />
                 <a href='https://my-twitter-ish.herokuapp.com/' alt='twitter-ish' target="_blank" rel="noreferrer">
-                    <img src={twitter} className='portfolioPhoto'></img>
+                    <img src={twitter} className='portfolioPhoto' alt=''></img>
                     <caption>Twitter-ish</caption>
                     <span>(2021)</span>
                 </a>
