@@ -20,9 +20,9 @@ const LoadingPage = ()=>{
 
     return(
         <motion.div 
-        initial='slideright'
-        animate='slideleft'
-        exit='slideright'
+        initial='slidedown'
+        animate='slideup'
+        exit='slidedown'
         variants={pageTransition}
         transition={pageTransition.smooth}
         className='blackBkg'>

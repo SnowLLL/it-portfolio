@@ -25,7 +25,7 @@ const HomePage = ()=>{
     useEffect(()=>{
         animationRef.current = anime({
             targets: '.jumpCircle .circle',
-            translateX: -150,
+            translateX: -100,
             translateY: 400,
             scale:1.2,
             delay: anime.stagger(100, {from:'center'}),
@@ -57,7 +57,7 @@ const HomePage = ()=>{
                 translateX:'-40vw',
                 translateY:'-17vw',
                 transition:{
-                    type:'tween',
+                    type:'spring',
                     duration:1,
                     bounce: 0.2,
                 }
@@ -70,9 +70,9 @@ const HomePage = ()=>{
 
     const [canScroll, setCanScroll] = useState(false)
     const { scrollYProgress } = useViewportScroll()
-    const scaleToNull = useTransform(scrollYProgress , [1,0],[0,1]);
+    const scaleToNull = useTransform(scrollYProgress , [0,1],[1,0]);
     const scaleToBig = useTransform(scrollYProgress , [0,1],[1,2]);
-    const opacity = useTransform(scrollYProgress, [0, 1],[1,0]);
+    const opacity = useTransform(scrollYProgress, [0,1],[1,0]);
 
     useEffect(()=>{
         canScroll === false ? document.querySelector('body').classList.add('no-scroll') 
