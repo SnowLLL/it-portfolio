@@ -80,7 +80,6 @@ const Portfolio = ()=>{
                     <span>(2017)</span>
                 </a>
             </motion.div>
-            <Loading />
         </motion.div>
     );
 }

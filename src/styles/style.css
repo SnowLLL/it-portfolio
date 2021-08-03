@@ -112,13 +112,13 @@ caption{
 
 #quote{
   position: relative;
-  top:25em;
+  top:15em;
   left:10em;
 }
 
 #calculator{
   position: relative;
-  top:-25em;
+  top:-15em;
   left:-10em;
 }
 
@@ -128,7 +128,7 @@ caption{
 
 #mealbox{
   position: relative;
-  top:-40em;
+  top:-35em;
   left:65em
 }
 
