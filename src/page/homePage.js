@@ -48,7 +48,7 @@ const HomePage = ()=>{
         if(!inView){
             animationInView.start({x:'80vw'})
         }
-    },[animationInView])
+    },[inView,animationInView])
 
     useEffect(()=>{
         if(inView){
@@ -66,7 +66,7 @@ const HomePage = ()=>{
         if(!inView){
             animationTechInView.start({x:'-100vw'})
         }
-    },[animationTechInView])
+    },[inView,animationTechInView])
 
     const [canScroll, setCanScroll] = useState(false)
     const { scrollYProgress } = useViewportScroll()
