@@ -52,23 +52,23 @@ const Portfolio = ()=>{
             style={{scale:scaleToNull}}
             className='portfolio'
             id='quote'>
-                <Loading />
                 <a href='https://my-random-quote.netlify.app/' alt='Quote machine' target="_blank" rel="noreferrer">
-                    <img src={quote} className='portfolioPhoto big' alt='Quote machine'></img>
+                    <img src={quote} className='portfolioPhoto' id='bigQuo' alt='Quote machine'></img>
                     <caption>Quote Machine</caption>
                     <span>(2020)</span>
                 </a>
             </motion.div>
+            <Loading />
             <motion.div
             style={{scale:scaleToNull}}
             className='portfolio'
             id='calculator'>
+                <Loading />
                 <a href='https://snowlll.github.io/calculatorByJavaScript/' alt='Calculator' target="_blank" rel="noreferrer">
-                    <img src={calculator} className='portfolioPhoto big' alt='Calculator'></img>
+                    <img src={calculator} className='portfolioPhoto' id='bigCal' alt='Calculator'></img>
                     <caption>Calculator</caption>
                     <span>(2021)</span>
                 </a>
-                <Loading />
             </motion.div>
             <motion.div
             style={{scale:scaleToBig}}
@@ -80,6 +80,7 @@ const Portfolio = ()=>{
                     <span>(2017)</span>
                 </a>
             </motion.div>
+            <Loading />
         </motion.div>
     );
 }

@@ -102,14 +102,18 @@ caption{
   left:35em;
 }
 
-.big{
-  width:200em;
+#bigQuo{
+  width:100em;
+}
+
+#bigCal{
+  width:100em;
 }
 
 #quote{
   position: relative;
-  top:10em;
-  left:20em;
+  top:25em;
+  left:10em;
 }
 
 #calculator{
@@ -124,7 +128,7 @@ caption{
 
 #mealbox{
   position: relative;
-  top:-25em;
+  top:-40em;
   left:65em
 }
 
