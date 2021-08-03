@@ -15,7 +15,6 @@ const LoadingPage = ()=>{
             translateX: 350,
             translateY: 450,
             delay: anime.stagger(50, {start:0}),
-            // loop:true
           });
     },[])
 

@@ -48,7 +48,7 @@ const HomePage = ()=>{
         if(!inView){
             animationInView.start({x:'80vw'})
         }
-    },[inView])
+    },[animationInView])
 
     useEffect(()=>{
         if(inView){
@@ -66,7 +66,7 @@ const HomePage = ()=>{
         if(!inView){
             animationTechInView.start({x:'-100vw'})
         }
-    },[inView])
+    },[animationTechInView])
 
     const [canScroll, setCanScroll] = useState(false)
     const { scrollYProgress } = useViewportScroll()
@@ -92,7 +92,7 @@ const HomePage = ()=>{
             </motion.div>
             <Loading />
             <motion.div style={{scale:scaleToNull}}>
-                <img src={selfie} className='photo'></img>
+                <img src={selfie} className='photo' alt='selfie'></img>
             </motion.div>
             <motion.div 
             style={{scale:scaleToBig}}
@@ -101,7 +101,6 @@ const HomePage = ()=>{
                 <p> I'm an aspiring, innovative and diligent Front-end and UI development professional 
                     with a strong passion to produce and deliver robust, well-designed, elegant front-end solutions.</p>
             </motion.div>
-            {/* <MouseMoveDown /> */}
             <motion.div 
             style={{scale:scaleToBig}}
             animate={animationTechInView}

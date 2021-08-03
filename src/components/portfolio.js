@@ -30,7 +30,7 @@ const Portfolio = ()=>{
                 y:'20vh',
             })
         }
-    },[inView])
+    },[inView,animationHorizontalInView])
 
     return(
         <div className='blackBkg'>
@@ -38,12 +38,12 @@ const Portfolio = ()=>{
             animate={animationHorizontalInView}
             ref ={ref}
             className='portfolio'>
-                <a href='https://my-twitter-ish.herokuapp.com/' alt='twitter' target="_blank"><img src={twitter} className='portfolioPhoto'></img></a>
-                <a href='https://student-profiles-test.netlify.app/' alt='student' target="_blank"><img src={student} className='portfolioPhoto'></img></a>
-                <a href='https://china-floods-2021.herokuapp.com/' alt='floods' target="_blank"><img src={floods} className='portfolioPhoto'></img></a>
-                <a href='https://my-random-quote.netlify.app/' alt='quote' target="_blank"><img src={quote} className='portfolioPhoto'></img></a>
-                <a href='https://snowlll.github.io/calculatorByJavaScript/'alt='calculator' target="_blank"><img src={calculator} className='portfolioPhoto'></img></a>
-                <a href='http://www.sfu.ca/~nshukri/iat339-MealBox/' alt='mealbox' target="_blank"><img src={mealbox} className='portfolioPhoto'></img></a>
+                <a href='https://my-twitter-ish.herokuapp.com/' alt='twitter' target="_blank" rel="noreferrer"><img src={twitter} className='portfolioPhoto'></img></a>
+                <a href='https://student-profiles-test.netlify.app/' alt='student' target="_blank" rel="noreferrer"><img src={student} className='portfolioPhoto'></img></a>
+                <a href='https://china-floods-2021.herokuapp.com/' alt='floods' target="_blank" rel="noreferrer"><img src={floods} className='portfolioPhoto'></img></a>
+                <a href='https://my-random-quote.netlify.app/' alt='quote' target="_blank" rel="noreferrer"><img src={quote} className='portfolioPhoto'></img></a>
+                <a href='https://snowlll.github.io/calculatorByJavaScript/'alt='calculator' target="_blank" rel="noreferrer"><img src={calculator} className='portfolioPhoto'></img></a>
+                <a href='http://www.sfu.ca/~nshukri/iat339-MealBox/' alt='mealbox' target="_blank" rel="noreferrer"><img src={mealbox} className='portfolioPhoto'></img></a>
             </motion.div>
         </div>
     );
