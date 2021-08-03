@@ -1,9 +1,13 @@
-import Loading from './loading'
-import HomePage from './homePage'
 import Menu from './menu'
+import Loading from './loading'
+import MouseMoveDown from './mouseDown'
+import Portfolio from './portfolio'
+import Contact from './contact'
 
 export {
-    Loading,
-    HomePage,
     Menu,
+    Loading,
+    MouseMoveDown,
+    Portfolio,
+    Contact
 }

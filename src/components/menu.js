@@ -1,25 +1,14 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
+// import React from 'react';
+// import { motion } from 'framer-motion'
 
-export default function CustomizedMenus() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+// const Menu =()=> {
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+//   return (
+//     <motion.div
+//     >
+//         <a href='https://github.com/SnowLLL?tab=repositories' alt='link to Github'> Open GitHub </a>
+//     </motion.div>
+//   );
+// }
 
-  return (
-    <div>
-      <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        color="primary"
-        onClick={handleClick}
-      >
-        Open Menu
-      </Button>
-    </div>
-  );
-}
-
+// export default Menu
