@@ -1,5 +1,5 @@
 # [IT - Portfolio](https://upbeat-perlman-856ff1.netlify.app/home) 
-:link:
+
 ```diff
 + TECH STACK
 ```
