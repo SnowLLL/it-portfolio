@@ -30,4 +30,4 @@
 - ```Main Page ```
   - Names jump in
   - scroll down to see more contents with animations
-  - ![caption](link to image / GIF)
+  - ![caption](/videos/it-portfolio.mov)
